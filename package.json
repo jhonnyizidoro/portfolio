@@ -19,6 +19,7 @@
 	},
 	"homepage": "https://github.com/jhonnyizidoro/jhonnyizidoro#readme",
 	"dependencies": {
+		"imask": "^4.1.5",
 		"jump.js": "^1.0.2"
 	},
 	"devDependencies": {

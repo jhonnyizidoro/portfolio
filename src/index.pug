@@ -4,9 +4,15 @@ html(lang="pt-br")
 		meta(charset='utf-8')
 		meta(http-equiv="X-UA-Compatible", content="IE=edge")
 		meta(name="viewport" content="width=device-width, initial-scale=1")
+		meta(name="description" content="Portfófio Jhonny Izidoro Menarim")
+		title Jhonny Menarim
 		link(rel="stylesheet", href="css/app.css")
 		link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700")
 		link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Raleway:300,400,600,700,800")
+		link(rel='apple-touch-icon', sizes='180x180', href='images/favicon/apple-touch-icon.png')
+		link(rel='icon', type='image/png', sizes='32x32', href='images/favicon/favicon-32x32.png')
+		link(rel='icon', type='image/png', sizes='16x16', href='images/favicon/favicon-16x16.png')
+		link(rel='shortcut icon', href='images/favicon/favicon.ico')
 	body
 		header.header
 			.container
@@ -106,33 +112,33 @@ html(lang="pt-br")
 						.project__description
 							h2.project__description__title Sistema de inscrição
 							p Sistema de inscrição para um evento que aconteceu ainda na primeira semana em que participei do projeto PROTECA. Me diverti muito fazendo esse projeto. Eu precisava salvar os registros de quem se cadastrava, mas não tinha onde hospedar o sistema. Então decidi fazer o projeto com Vue JS e Firebase, assim consegui hospedar o sistema no GitHub como uma página estática.
-					a.button.button--white(href="https://github.com/jhonnyizidoro", target="_blank") Veja mais no meu GitHub
+					a.button.button--white(href="https://github.com/jhonnyizidoro", target="_blank", rel="noreferrer") Veja mais no meu GitHub
 			img.projects__background__bottom(src="images/projects/bg-bottom.svg", alt="Background top")
 		section.contact
 			h2.contact__title Entre em contato!
 			form.contact__form(method="POST")
 				input.contact__form__input(type="text", placeholder="Nome", name="name")
 				input.contact__form__input(type="text", placeholder="E-mail", name="email")
-				input.contact__form__input(type="text", placeholder="Celular", name="cellphone")
+				input.contact__form__input(type="text", placeholder="Celular", name="cellphone", id="cellphone")
 				textarea.contact__form__textarea(placeholder="Mensagem", name="message")
-				button.button.button--dark(type="submit") Enviar
+				button.button.button--dark(type="submit", id="submit-contact") Enviar
 		footer.footer
 			.container
 				.footer__resume
 					h2.footer__resume__title Jhonny Izidoro Menarim
-					a.button.button--mixed(type="submit") Baixe meu currículo completo em PDF
+					a.button.button--mixed(href="resume.pdf", target="_blank") Baixe meu currículo completo em PDF
 				.footer__socials
 					.footer__icon
-						a(href="mailto:jhonny-cwb@hotmail.com", target="_blank")
+						a(href="mailto:jhonny-cwb@hotmail.com", target="_blank", rel="noreferrer")
 							.icon.icon__email
 					.footer__icon
-						a(href="https://codepen.io/jhonnyizidoro/", target="_blank")
+						a(href="https://codepen.io/jhonnyizidoro/", target="_blank", rel="noreferrer")
 							.icon.icon__codepen
 					.footer__icon
-						a(href="https://github.com/jhonnyizidoro", target="_blank")
+						a(href="https://github.com/jhonnyizidoro", target="_blank", rel="noreferrer")
 							.icon.icon__github
 					.footer__icon
-						a(href="https://www.linkedin.com/in/jhonnyizidoro/", target="_blank")
+						a(href="https://www.linkedin.com/in/jhonnyizidoro/", target="_blank", rel="noreferrer")
 							.icon.icon__linkedin
 				.footer__copyright Jhonny Menarim © 2019 #[br] jhonny-cwb@hotmail.com
 		.modal
