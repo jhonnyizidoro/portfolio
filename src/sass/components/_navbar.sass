@@ -1,0 +1,21 @@
+.navbar
+	+flex(space-between, center)
+	margin: 20px 0
+	&__left
+		+flex(space-between, center)
+	&__link
+		+font($t: uppercase, $c: $primary, $lh: 3)
+		margin-right: 20px
+		position: relative
+		&::after,
+		&::before
+			+pseudo
+			+size(0%, 1px)
+			background: $primary
+			transition: 300ms
+		&::before
+			right: 0
+		&:hover
+			&::after,
+			&::before
+				width: 100%

@@ -1,0 +1,27 @@
+.projects
+	text-align: center
+	&__title__wrapper
+		transform: translateY(200px)
+		width: 45%
+	&__wrapper
+		background: $primary
+		padding: 100px 0
+	&__background__top
+		transform: translateY(4px)
+		width: 100vw
+	&__background__bottom
+		transform: translateY(-1px)
+		width: 100vw
+
+.project
+	+flex(center, flex-start)
+	color: $white
+	margin-bottom: 150px
+	&__screenshot,
+	&__description
+		padding: 0 35px
+		width: 45%
+	&__description
+		&__title
+			text-shadow: 1px 1px 6px rgba($white, .5)
+		

@@ -1,0 +1,54 @@
+@font-face {
+  font-family: 'icon';
+  src:
+    url('fonts/icon.ttf?qgpfi5') format('truetype'),
+    url('fonts/icon.woff?qgpfi5') format('woff'),
+    url('fonts/icon.svg?qgpfi5#icon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon.icon__"], [class*=" icon.icon__"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon.icon__backend:before {
+  content: "\e920";
+}
+.icon.icon__codepen:before {
+  content: "\e921";
+  color: #fff;
+}
+.icon.icon__email:before {
+  content: "\e922";
+  color: #fff;
+}
+.icon.icon__frontend:before {
+  content: "\e923";
+}
+.icon.icon__github:before {
+  content: "\e924";
+  color: #fff;
+}
+.icon.icon__linkedin:before {
+  content: "\e925";
+  color: #fff;
+}
+.icon.icon__others:before {
+  content: "\e926";
+}
+.icon.icon__project-notebok:before {
+  content: "\e927";
+  color: #fff;
+}

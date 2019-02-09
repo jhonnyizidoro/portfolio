@@ -1,0 +1,51 @@
+.knowledges
+	background-color: $primary
+	position: relative
+	z-index: 1
+	&__background__top
+		transform: translateY(-100%)
+		width: 100vw
+	&__title__wrapper
+		+flex(center, center)
+	&__title__wrapper_child
+		position: relative
+	&__title,
+	&__subtitle
+		+font($a: center, $c: $white)
+	&__subtitle
+		margin-bottom: 8rem
+		padding: 0 20%
+	&__emoji
+		+position($r: -2.8rem, $b: .85rem)
+		+size(2.5rem)
+	&__wrapper
+		+flex(center, flex-start)
+		background: $white
+		border-radius: 50px 50px 0 0
+		box-shadow: $medium-box-shadow
+	&__background__bottom
+		+position($b: 0)
+		width: 100vw
+		z-index: -1
+
+.knowledge
+	padding: 3rem
+	&:not(:last-of-type)
+		border-right: 1px solid rgba($muted, .2)
+	&__title
+		font-family: 'Raleway'
+		+font(18px, $w: 800, $a: center)
+		margin: 1rem 0 1.8rem
+	&__description
+		+font($a: center, $lh: 1.75)
+	&__subtitle
+		+font(16px, $a: center, $c: $primary)
+		margin: 2rem 0 .5rem
+	&__list
+		list-style-type: none
+		padding: 0
+	&__list__item
+		+font($a: center, $lh: 2.2)
+.icon
+	+font(5rem, $a: center, $c: $primary)
+	display: block

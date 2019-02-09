@@ -1,0 +1,30 @@
+.footer
+	background: $primary
+	color: $white
+	margin-top: 200px
+	&__resume
+		+flex(center, center, column)
+		background: $dark
+		border-radius: 1rem
+		box-shadow: $medium-box-shadow
+		padding: 2rem 0
+		transform: translateY(-50%)
+	&__resume__title
+		+font(1.8rem, $t: uppercase)
+		margin: 0 0 1em
+	&__socials
+		+flex(center, center)
+	&__icon:hover
+		.icon
+			transform: rotateY(180deg) scale(1.2)
+	.icon
+		+font(2.5rem)
+		color: $white
+		padding: 0 1rem
+		transition: 650ms $cubic-bazier
+	&__copyright
+		+font($a: center, $t: uppercase, $lh: 2)
+		padding: 3rem 0 7rem
+		opacity: .55
+
+		

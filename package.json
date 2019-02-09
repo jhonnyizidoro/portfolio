@@ -1,0 +1,53 @@
+{
+	"name": "jhonnys-portfolio",
+	"version": "1.0.0",
+	"description": "My Personal Portfolio",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/jhonnyizidoro/jhonnyizidoro.git"
+	},
+	"keywords": [
+		"jhonny",
+		"izidoro",
+		"menarim",
+		"portfolio"
+	],
+	"author": "Jhonny Izidoro Menarim",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/jhonnyizidoro/jhonnyizidoro/issues"
+	},
+	"homepage": "https://github.com/jhonnyizidoro/jhonnyizidoro#readme",
+	"dependencies": {
+		"jump.js": "^1.0.2"
+	},
+	"devDependencies": {
+		"@babel/core": "^7.2.2",
+		"@babel/preset-env": "^7.3.1",
+		"babelify": "^10.0.0",
+		"browser-sync": "^2.26.3",
+		"browserify": "^16.2.3",
+		"gulp": "^4.0.0",
+		"gulp-autoprefixer": "^6.0.0",
+		"gulp-cache": "^1.1.1",
+		"gulp-clean": "^0.4.0",
+		"gulp-fs-cache": "^0.1.0",
+		"gulp-imagemin": "^5.0.3",
+		"gulp-plumber": "^1.2.1",
+		"gulp-pug": "^4.0.1",
+		"gulp-sass": "^4.0.2",
+		"gulp-sourcemaps": "^2.6.4",
+		"gulp-uglify": "^3.0.1",
+		"imagemin-giflossy": "^5.1.10",
+		"imagemin-mozjpeg": "^8.0.0",
+		"imagemin-pngquant": "^7.0.0",
+		"imagemin-zopfli": "^6.0.0",
+		"pump": "^3.0.0",
+		"vinyl-buffer": "^1.0.1",
+		"vinyl-source-stream": "^2.0.0"
+	},
+	"scripts": {
+		"watch": "gulp watch",
+		"build": "gulp build"
+	}
+}

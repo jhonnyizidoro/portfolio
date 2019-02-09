@@ -1,0 +1,36 @@
+@font-face
+  font-family: 'icon'
+  font-style: normal
+  font-weight: normal
+  src: url('../fonts/icon.ttf?qgpfi5') format('truetype'), url('../fonts/icon.woff?qgpfi5') format('woff'), url('../fonts/icon.svg?qgpfi5#icon') format('svg')
+
+.icon
+  display: inline-block
+  font-family: 'icon'
+  font-style: normal
+  font-variant: normal
+  font-weight: normal
+  line-height: 1
+  speak: none
+  text-transform: none
+
+  &.icon__backend::before
+    content: '\e920'
+
+  &.icon__codepen::before
+    content: '\e921'
+
+  &.icon__email::before
+    content: '\e922'
+
+  &.icon__frontend::before
+    content: '\e923'
+
+  &.icon__github::before
+    content: '\e924'
+
+  &.icon__linkedin::before
+    content: '\e925'
+
+  &.icon__others::before
+    content: '\e926'

@@ -1,0 +1,13 @@
+.header
+	height: 99vh
+	text-align: center	
+	&__avatar
+		max-width: 220px
+	&__content
+		transform: translateY(calc(28vh - 100px))
+	&__background
+		+size(100%)
+		+position(0, 0, $p: absolute)
+		opacity: .03
+		transform: scale(1.3) rotate(-10deg)
+		z-index: -1

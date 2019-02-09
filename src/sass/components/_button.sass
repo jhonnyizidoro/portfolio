@@ -1,0 +1,28 @@
+.button
+	border-radius: 999rem
+	cursor: pointer
+	transition: 650ms $cubic-bazier
+	&--dark
+		+font($w: 700, $t: uppercase, $c: $primary)
+		background: transparent
+		border: 1px solid $primary
+		padding: .8em 1.8em
+		&:hover
+			background-color: $primary
+			color: $white
+	&--white
+		+font(1.4rem, $w: 500, $t: uppercase, $c: $white)
+		border: 2px solid $white
+		padding: .3em 1.8em
+		&:hover
+			background: $white
+			color: $primary
+	&--mixed
+		+font(1rem, $w: 700, $t: uppercase, $c: $white)
+		border: 2px solid $primary
+		padding: .3em 1.8em
+		&:hover
+			transform: scale(1.1)
+	&:active,
+	&:focus
+		outline: 0

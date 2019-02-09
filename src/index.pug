@@ -1,0 +1,145 @@
+doctype html
+html(lang="pt-br")
+	head
+		meta(charset='utf-8')
+		meta(http-equiv="X-UA-Compatible", content="IE=edge")
+		meta(name="viewport" content="width=device-width, initial-scale=1")
+		link(rel="stylesheet", href="css/app.css")
+		link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700")
+		link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Raleway:300,400,600,700,800")
+	body
+		header.header
+			.container
+				nav.navbar
+					.navbar__left
+						a.navbar__link#knowledges Conhecimentos
+						a.navbar__link#projects Projetos
+						a.navbar__link(href="resume.pdf", target="_blank") Currículo
+					.navbar__right
+						.button.button--dark#contact Contato
+				.header__content
+					h1.header__title Desenvolvedor Full-Stack apaixonado por aprender.
+					h3.header__subtitle Eu faço coisas da maneira mais simples e funcional possível,#[br]sempre pensando no usuário.
+					img.header__avatar(src="images/header/avatar-purple.svg", alt="Meu avatar.")
+			img.header__background(src="images/header/background.svg", alt="Meu avatar.")
+		section.knowledges
+			img.knowledges__background__top(src="images/knowledges/bg-top.svg", alt="Background top")
+			.container
+				.knowledges__title__wrapper
+					.knowledges__title__wrapper_child
+						h2.knowledges__title Oi, eu sou o Jhonny.#[br]É um prazer ter você por aqui
+						img.knowledges__emoji(src="images/knowledges/emoji.png", alt="")
+				h3.knowledges__subtitle Desde que comecei a desenvolver, a pouco tempo atrás, já participei de vários projetos interessantes. Atualmente sou um desenvolvedor Full-Stack mas estou focado em melhorar minhas skills em design e Front-End. A tecnologia me encanta, serei eternamente um curioso em busca de mais conhecimento.
+				.knowledges__wrapper
+					.knowledge
+						.icon.icon__frontend
+						.knowledge__title Front-End
+						.knowledge__description Para mim programar telas não é apenas copiar designs, vai muito além. Usabilidade e performance com responsividade são essenciais.
+						.knowledge__subtitle Sei trabalhar com
+						ul.knowledge__list
+							li.knowledge__list__item Bootstrap
+							li.knowledge__list__item Bulma CSS
+							li.knowledge__list__item CSS
+							li.knowledge__list__item Gulp
+							li.knowledge__list__item HTML
+							li.knowledge__list__item Jade
+							li.knowledge__list__item JavaScript ES6+
+							li.knowledge__list__item JQuery
+							li.knowledge__list__item Pug
+							li.knowledge__list__item Sass
+							li.knowledge__list__item Vue JS
+					.knowledge
+						.icon.icon__backend
+						.knowledge__title Back-End
+						.knowledge__description A parte estrutural do Software me impressiona, a produtividade que é possível obter com as ferramentas disponíveis é sensacional.
+						.knowledge__subtitle Eu também sei
+						ul.knowledge__list
+							li.knowledge__list__item API REST
+							li.knowledge__list__item Docker
+							li.knowledge__list__item Express JS
+							li.knowledge__list__item Firebase
+							li.knowledge__list__item JavaScript
+							li.knowledge__list__item Laravel
+							li.knowledge__list__item MVC
+							li.knowledge__list__item MySQL
+							li.knowledge__list__item OOP
+							li.knowledge__list__item PHP
+							li.knowledge__list__item PostgreSQL
+					.knowledge
+						.icon.icon__others
+						.knowledge__title Outros
+						.knowledge__description A programação com essas ferramentas só é produtiva e funcional se combinada com conhecimentos em outras ferramentas.
+						.knowledge__subtitle Para isso aprendi
+						ul.knowledge__list
+							li.knowledge__list__item Adobe After Effects
+							li.knowledge__list__item Adobe Illustrator
+							li.knowledge__list__item Adobe XD
+							li.knowledge__list__item BitBucket
+							li.knowledge__list__item GitHub
+							li.knowledge__list__item GitLab
+							li.knowledge__list__item Heroku
+							li.knowledge__list__item Inglês
+							li.knowledge__list__item NPM
+							li.knowledge__list__item Sony Vegas
+							li.knowledge__list__item Webpack
+			img.knowledges__background__bottom(src="images/knowledges/bg-bottom.svg", alt="Background top")
+		section.projects
+			.container
+				.projects__title__wrapper
+					h2.projects__title Meus Projetos
+					h3.projects__subtitle Por ainda ser novo na área de desenvolvimento, não tenho muitos projetos realizados, mas mesmo assim estou sempre envolvido no desenvolvimento de alguma ferramenta, seja profissionalmente ou para aprender.
+			img.projects__background__top(src="images/projects/bg-top.svg", alt="Background top")
+			.projects__wrapper
+				.container
+					.project
+						img.project__screenshot(src="images/projects/grandprix.PNG", alt="Background top")
+						.project__description
+							h2.project__description__title GrandPrix Automóveis
+							p Site da loja GrandPrix onde ela anuncia seus veículos. Esse site representou um grande desafio, pois uma mas maiores preocupações que tivemos foi otimizar a performance dele para que a ele tivesse uma nota boa no Google PageSpeed Insight. Isso mudou toda a dinâmica do desenvolvimento. O site é totalmente responsivo e foi feito utilizando tecnologias modernas.
+					.project
+						.project__description
+							h2.project__description__title PROTECA
+							p Site para divulgação de notícias feito em um projeto da Universidade Federal do Paraná. O conteúdo do site tem o intuito de prevenir o aliciamento de crianças e adolescentes pela internet. O grande desafio desse projeto foi a responsabilidade que senti, pois além de ser o meu primeiro projeto importante,  o projeto representa uma causa muito nobre, que é a de proteger nossas crianças e adolescentes.
+						img.project__screenshot(src="images/projects/proteca.PNG", alt="Background top")
+					.project
+						img.project__screenshot(src="images/projects/inscricao.PNG", alt="Background top")
+						.project__description
+							h2.project__description__title Sistema de inscrição
+							p Sistema de inscrição para um evento que aconteceu ainda na primeira semana em que participei do projeto PROTECA. Me diverti muito fazendo esse projeto. Eu precisava salvar os registros de quem se cadastrava, mas não tinha onde hospedar o sistema. Então decidi fazer o projeto com Vue JS e Firebase, assim consegui hospedar o sistema no GitHub como uma página estática.
+					a.button.button--white(href="https://github.com/jhonnyizidoro", target="_blank") Veja mais no meu GitHub
+			img.projects__background__bottom(src="images/projects/bg-bottom.svg", alt="Background top")
+		section.contact
+			h2.contact__title Entre em contato!
+			form.contact__form(method="POST")
+				input.contact__form__input(type="text", placeholder="Nome", name="name")
+				input.contact__form__input(type="text", placeholder="E-mail", name="email")
+				input.contact__form__input(type="text", placeholder="Celular", name="cellphone")
+				textarea.contact__form__textarea(placeholder="Mensagem", name="message")
+				button.button.button--dark(type="submit") Enviar
+		footer.footer
+			.container
+				.footer__resume
+					h2.footer__resume__title Jhonny Izidoro Menarim
+					a.button.button--mixed(type="submit") Baixe meu currículo completo em PDF
+				.footer__socials
+					.footer__icon
+						a(href="mailto:jhonny-cwb@hotmail.com", target="_blank")
+							.icon.icon__email
+					.footer__icon
+						a(href="https://codepen.io/jhonnyizidoro/", target="_blank")
+							.icon.icon__codepen
+					.footer__icon
+						a(href="https://github.com/jhonnyizidoro", target="_blank")
+							.icon.icon__github
+					.footer__icon
+						a(href="https://www.linkedin.com/in/jhonnyizidoro/", target="_blank")
+							.icon.icon__linkedin
+				.footer__copyright Jhonny Menarim © 2019 #[br] jhonny-cwb@hotmail.com
+		.modal
+			.modal__background
+			.modal__body
+				h2.modal__title Envio de formulário!
+				img.modal__avatar(data-error="images/modal/avatar-error.svg", data-success="images/modal/avatar-success.svg", alt="Meu avatar.")
+				.modal__message
+				.button.button--dark.modal__close OK!
+		script(src="js/app.js")
