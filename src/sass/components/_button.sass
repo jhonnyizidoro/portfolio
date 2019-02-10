@@ -25,6 +25,14 @@
 		padding: .3em 1.8em
 		&:hover
 			transform: scale(1.1)
+	&--filled
+		+font(.875rem, $w: 700, $t: uppercase, $c: $primary)
+		background: $white
+		padding: .15em 1.2em
+		transition: 500ms
+		&:hover
+			box-shadow: $medium-box-shadow
+			color: $dark
 	&:active,
 	&:focus
 		outline: 0
