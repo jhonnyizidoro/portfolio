@@ -31,7 +31,7 @@ imageminCache = require('gulp-cache')
 //Limpa a pasta dist
 task(clean = () => {
 	return pump([
-		src(['dist/images/**/*', '!dist/js/tmp/**/*'], {
+		src('dist/', {
 			allowEmpty: true
 		}),
 		gulpClean({
