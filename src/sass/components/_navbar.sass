@@ -19,3 +19,24 @@
 			&::after,
 			&::before
 				width: 100%
+
++mobile
+	.navbar
+		+position(0, 0, $l: 0, $p: fixed)
+		background: $dark
+		box-shadow: $medium-box-shadow
+		flex-direction: column
+		margin: 0
+		padding: 1rem 0 5rem
+		transform: translateY(-81%)
+		transition: 300ms $cubic-bazier
+		z-index: 99
+		&__left
+			flex-direction: column
+		&__link
+			color: $white
+			margin-right: 0
+			margin-bottom: 1em
+		&--active
+			padding: 1rem 0 1rem
+			transform: none

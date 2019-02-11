@@ -38,4 +38,12 @@ document.addEventListener('DOMContentLoaded', () => {
 		contactForm.reset()
 	})
 
+	//Responsive navbar
+	const navbar = document.querySelector('.navbar')
+	const hamburgerButton = document.querySelector('.hamburger')
+	hamburgerButton.addEventListener('click', () => {
+		navbar.classList.toggle('navbar--active')
+		hamburgerButton.classList.toggle('hamburger--active')
+	})
+
 })

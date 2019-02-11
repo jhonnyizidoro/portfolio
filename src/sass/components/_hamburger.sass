@@ -1,0 +1,38 @@
+.hamburger
+	+size(2.5rem, 30px)
+	+position($r: 1em, $b: 1em)
+	cursor: pointer
+	display: none
+	&__menu
+		+size(2.5rem, 5px)
+		background: $primary
+		border-radius: 3px
+		transform: translateY(12px)
+		&::after,
+		&::before
+			+size(2.5rem, 5px)
+			+pseudo
+			background: $primary
+			border-radius: 3px
+			left: 0
+			transition: 300ms 300ms $cubic-bazier, transform 300ms $cubic-bazier
+		&::after
+			top: 12px
+		&::before
+			bottom: 12px
+	&--active
+		bottom: 1.2em
+		.hamburger__menu
+			background: transparent
+			&::after
+				top: 0
+				transform: rotate(45deg)
+				transition: top 300ms $cubic-bazier, transform 300ms 300ms $cubic-bazier
+			&::before
+				bottom: 0
+				transform: rotate(-45deg)
+				transition: bottom 300ms $cubic-bazier, transform 300ms 300ms $cubic-bazier
+
++mobile
+	.hamburger
+		display: block

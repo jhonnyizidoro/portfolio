@@ -49,3 +49,25 @@
 .icon
 	+font(5rem, $a: center, $c: $primary)
 	display: block
+
++tablet
+	.knowledge
+		padding: 2rem 10px
+
+
++mobile
+	.knowledges
+		&__wrapper
+			flex-direction: column
+		&__title
+			font-size: 1.8rem
+			&::after
+				content: '!'
+		&__subtitle
+			margin-bottom: 3rem
+			padding: 0 10px
+		&__emoji
+			display: none
+	.knowledge
+		border-bottom: 1px solid rgba($muted, .2)
+		border-right: 0

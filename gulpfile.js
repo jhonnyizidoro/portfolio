@@ -118,7 +118,7 @@ task(img = () => {
 	])
 })
 
-//Converte JS Modular em JS interpretável pelos browsers
+//Converte Pug/Jade em HTML
 task(pug = () => {
 	return pump([
 		src('src/**/*.pug'),
@@ -160,7 +160,7 @@ task(server = () => {
 })
 
 //Recarrega o browser
-task(reload = (done) => {
+task(reload = done => {
 	browserSync.reload()
 	done()
 })
